@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="50dp">
+
+        <!-- Product title layout -->
+
+        <android.support.v7.widget.CardView
+            app:cardElevation="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/product_page_price_ratings_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="75dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="6dp"
+                    android:layout_weight="187"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/product_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs. 2790"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/owner_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+                        android:paddingTop="2dp"
+                        android:tag="check_for_delivery_details"
+                        android:text=" Fahim khan"
+                        android:textColor="#175AAC"
+                        android:textSize="11dp" />
+
+                    <TextView
+                        android:id="@+id/email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_email_black_24dp"
+                        android:paddingTop="4dp"
+                        android:text="heyfahim@gmail.com"
+                        android:textColor="#565656"
+                        android:textSize="11dp" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#EBEBEB" />
+
+                <LinearLayout
+                    android:id="@+id/product_page_price_rating_rating_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="6dp"
+                    android:layout_weight="112"
+                    android:orientation="vertical"
+                    android:tag="open_review_page">
+
+
+                    <TextView
+                        android:id="@+id/product_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:drawableLeft="@drawable/ic_location_on_black_24dp"
+                        android:paddingTop="4dp"
+                        android:text="Mumbai"
+                        android:textColor="#565656"
+                        android:textSize="11dp" />
+
+
+                    <TextView
+                        android:id="@+id/product_mobile_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:drawableLeft="@drawable/ic_call_black_24dp"
+                        android:paddingTop="4dp"
+                        android:text="7977803286"
+                        android:textColor="#565656"
+                        android:textSize="11dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <!-- Product offers layout but removed
+        <RelativeLayout
+            android:id="@+id/product_page_offers_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/product_page_price_ratings_layout"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="8dp" >
+            <com.flipkart.app.ecom.customviews.ExpandablePanel
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/product_page_view_border"
+                android:orientation="vertical"
+                app:animationDuration="250"
+                app:collapsedHeight="65dip"
+                app:content="@+id/product_page_offers_content"
+                app:handle="@+id/product_page_offers_read_more" >
+                <LinearLayout
+                    android:id="@id/product_page_offers_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp"
+                        android:background="@android:color/transparent" />
+                </LinearLayout>
+                <TextView
+                    android:id="@id/product_page_offers_read_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:paddingLeft="33dp"
+                    android:text="read more"
+                    android:textColor="#56A93B"
+                    android:textSize="14sp" />
+            </com.flipkart.app.ecom.customviews.ExpandablePanel>
+            <LinearLayout
+                android:id="@+id/product_page_offers_image_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="8dp"
+                android:orientation="horizontal" >
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/offer_badge" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="8dp"
+                    android:text="OFFER"
+                    android:textColor="#565656"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/product_page_offers_image_expand_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="8dp"
+                android:orientation="horizontal" >
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:linksClickable="false"
+                    android:src="@drawable/read_more_badge" />
+            </LinearLayout>
+        </RelativeLayout>
+        -->
+
+        <!-- Product warranty layout -->
+
+        <TextView
+            android:id="@+id/product_page_warranty_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/product_page_price_ratings_layout"
+            android:layout_marginTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="8dp"
+            android:text="Product description"
+            android:textColor="#565656"
+            android:background="@color/fbutton_color_silver"
+            android:textSize="13sp" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/product_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="SAMSUNG GALAXY NOTE 3
+                               RAM 32 GB
+
+                               "
+                android:textSize="16sp" />
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:background="@color/fbutton_color_silver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="8dp"
+            android:text="Faulty Features"
+            android:textColor="#565656"
+            android:textSize="13sp" />
+
+        <android.support.v7.widget.CardView
+            app:cardElevation="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/fault_feature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="All works good "
+                android:textSize="16sp" />
+        </android.support.v7.widget.CardView>
+
+        <!-- Product emi/return/cod layout -->
+
+        <android.support.v7.widget.CardView
+            app:cardElevation="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/product_page_emi_cod_return_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_below="@id/product_page_warranty_layout"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/product_page_return_view"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="116"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/product_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/ic_perm_contact_calendar_black_24dp"
+                    android:text="30 DAY"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="#FFDFDFDF" />
+
+            <LinearLayout
+                android:id="@+id/product_page_cod_view"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="82"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CASH"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="On Delivery"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+            </LinearLayout>
+        </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <!-- Product reviews summary layout -->
+
+
+        <!-- Product specifications and summary button layout -->
+
+        <android.support.v7.widget.CardView
+            app:cardElevation="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/product_page_spec_summary_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/call_owner"
+                android:layout_width="0px"
+                android:layout_height="32dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="50"
+                android:background="#484855"
+                android:drawableRight="@drawable/ic_call_black_24dp"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:tag="open_specifications_page"
+                android:text="Call Owner"
+                android:textColor="#D8DEE7"
+                android:textSize="11dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/mail_owner"
+                android:layout_width="0px"
+                android:layout_height="32dp"
+                android:layout_weight="50"
+                android:background="@color/cardview_light_background"
+                android:drawableRight="@drawable/ic_email_black_24dp"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:tag="open_summary_page"
+                android:text="Send an Email"
+                android:textColor="@color/fbutton_color_asbestos"
+                android:textSize="11dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <!-- Product seller_info layout -->
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "189420720688",
+    "firebase_url": "https://smartsold-816cf.firebaseio.com",
+    "project_id": "smartsold-816cf",
+    "storage_bucket": "smartsold-816cf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:189420720688:android:7802aaa910aa2ac0",
+        "android_client_info": {
+          "package_name": "com.fahim.smartsold"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "189420720688-m3ilk4fd39052prgmmaj9toip9n3328i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fahim.smartsold",
+            "certificate_hash": "c245a5de27d34a6ca5c9796f0f6c7058085e373f"
+          }
+        },
+        {
+          "client_id": "189420720688-llbg0c86kv2m658fd3rb554h1lbbharh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTMyUbeSi5RuUSw4532Zp9Z3Ky_px6bZ8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "189420720688-llbg0c86kv2m658fd3rb554h1lbbharh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

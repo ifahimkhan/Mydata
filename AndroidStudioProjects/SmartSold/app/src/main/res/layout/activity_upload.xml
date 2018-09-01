@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:scrollbarStyle="outsideOverlay"
+    tools:context="com.fahim.smartsold.UploadActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/appbar"
+            layout="@layout/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/upload_item_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:textColor="@color/colorAccent"
+                app:met_floatingLabel="highlight" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/upload_item_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Description"
+                android:textColor="@color/colorAccent"
+                app:met_floatingLabel="highlight" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/upload_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mobile No"
+                android:inputType="number"
+                android:textColor="@color/colorAccent"
+                app:met_floatingLabel="highlight"
+                app:met_helperTextColor="@color/red" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/upload_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Your City"
+                android:textColor="@color/colorAccent"
+                app:met_floatingLabel="highlight"
+                app:met_helperTextColor="@color/red" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/upload_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:hint="Price"
+                android:textColor="@color/colorAccent"
+                app:met_floatingLabel="highlight"
+                app:met_helperTextColor="@color/red" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:weightSum="3">
+
+            <ImageView
+                android:id="@+id/upload_image"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="2"
+                android:foregroundGravity="center_horizontal"
+                android:src="@drawable/ic_terrain_black_24dp" />
+
+            <Button
+                android:id="@+id/browse"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@color/fbutton_color_wet_asphalt"
+                android:foregroundGravity="center"
+                android:padding="5dp"
+                android:text="Browse"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:weightSum="3">
+
+            <ImageView
+                android:id="@+id/upload_image2"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="2"
+                android:foregroundGravity="center_horizontal"
+                android:src="@drawable/ic_terrain_black_24dp" />
+
+            <Button
+                android:id="@+id/browse2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@color/fbutton_color_wet_asphalt"
+                android:foregroundGravity="center"
+                android:padding="5dp"
+                android:text="Browse"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:weightSum="3">
+
+            <ImageView
+                android:id="@+id/upload_image3"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="2"
+                android:foregroundGravity="center_horizontal"
+                android:src="@drawable/ic_terrain_black_24dp" />
+
+            <Button
+                android:id="@+id/browse3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@color/fbutton_color_wet_asphalt"
+                android:foregroundGravity="center"
+                android:padding="5dp"
+                android:text="Browse"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:weightSum="3">
+
+            <ImageView
+                android:id="@+id/upload_image4"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="2"
+                android:foregroundGravity="center_horizontal"
+                android:src="@drawable/ic_terrain_black_24dp" />
+
+            <Button
+                android:id="@+id/browse4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@color/fbutton_color_wet_asphalt"
+                android:foregroundGravity="center"
+                android:padding="5dp"
+                android:text="Browse"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/upload"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="35dp"
+            android:background="@color/fbutton_color_concrete"
+            android:enabled="false"
+            android:text="Upload"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+</ScrollView>

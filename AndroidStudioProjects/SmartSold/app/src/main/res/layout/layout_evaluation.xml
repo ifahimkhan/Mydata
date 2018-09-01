@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <jp.shts.android.library.TriangleLabelView
+                    android:id="@+id/checkmark1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:visibility="invisible"
+                    app:backgroundColor="@color/fbutton_color_nephritis"
+                    app:corner="leftTop"
+                    app:labelBottomPadding="10dp"
+                    app:labelCenterPadding="5dp"
+                    app:primaryText="@string/checked"
+                    app:primaryTextSize="20sp"
+                    app:secondaryText="@string/tick"
+                    app:secondaryTextColor="@color/fbutton_color_sun_flower"
+                    app:secondaryTextSize="20sp" />
+
+                <com.skyfishjy.library.RippleBackground xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/content1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    app:rb_color="@color/colorAccent"
+                    app:rb_duration="1500"
+                    app:rb_radius="32dp"
+                    app:rb_rippleAmount="4"
+                    app:rb_scale="6">
+
+                    <ImageView
+                        android:id="@+id/centerImage1"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="26dp"
+                        android:src="@drawable/wifi" />
+                </com.skyfishjy.library.RippleBackground>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <jp.shts.android.library.TriangleLabelView
+                    android:id="@+id/checkmark2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:visibility="invisible"
+                    app:backgroundColor="@color/fbutton_color_nephritis"
+                    app:corner="leftTop"
+                    app:labelBottomPadding="10dp"
+                    app:labelCenterPadding="5dp"
+                    app:primaryText="@string/checked"
+                    app:primaryTextSize="20sp"
+                    app:secondaryText="@string/tick"
+                    app:secondaryTextColor="@color/fbutton_color_sun_flower"
+                    app:secondaryTextSize="20sp" />
+
+                <com.skyfishjy.library.RippleBackground xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/content2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    app:rb_color="@color/fbutton_color_sun_flower"
+                    app:rb_duration="1500"
+                    app:rb_radius="32dp"
+                    app:rb_rippleAmount="4"
+                    app:rb_scale="6">
+
+                    <ImageView
+                        android:id="@+id/centerImage2"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="26dp"
+                        android:src="@drawable/bluetooth" />
+                </com.skyfishjy.library.RippleBackground>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <jp.shts.android.library.TriangleLabelView
+                    android:id="@+id/checkmark3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:visibility="invisible"
+                    app:backgroundColor="@color/fbutton_color_nephritis"
+                    app:corner="leftTop"
+                    app:labelBottomPadding="10dp"
+                    app:labelCenterPadding="5dp"
+                    app:primaryText="@string/checked"
+                    app:primaryTextSize="20sp"
+                    app:secondaryText="@string/tick"
+                    app:secondaryTextColor="@color/fbutton_color_sun_flower"
+                    app:secondaryTextSize="20sp" />
+
+                <com.skyfishjy.library.RippleBackground xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/content3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    app:rb_color="@color/colorAccent"
+                    app:rb_duration="1500"
+                    app:rb_radius="32dp"
+                    app:rb_rippleAmount="4"
+                    app:rb_scale="6">
+
+                    <ImageView
+                        android:id="@+id/centerImage3"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="26dp"
+                        android:src="@drawable/location" />
+                </com.skyfishjy.library.RippleBackground>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <jp.shts.android.library.TriangleLabelView
+                    android:id="@+id/checkmark4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:visibility="invisible"
+                    app:backgroundColor="@color/fbutton_color_nephritis"
+                    app:corner="leftTop"
+                    app:labelBottomPadding="10dp"
+                    app:labelCenterPadding="5dp"
+                    app:primaryText="@string/checked"
+                    app:primaryTextSize="20sp"
+                    app:secondaryText="@string/tick"
+                    app:secondaryTextColor="@color/fbutton_color_sun_flower"
+                    app:secondaryTextSize="20sp" />
+
+                <com.skyfishjy.library.RippleBackground xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/content4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    app:rb_color="@color/colorAccent"
+                    app:rb_duration="1500"
+                    app:rb_radius="32dp"
+                    app:rb_rippleAmount="4"
+                    app:rb_scale="6">
+
+                    <ImageView
+                        android:id="@+id/centerImage4"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="26dp"
+                        android:src="@drawable/ic_wifi_tethering_black_24dp" />
+                </com.skyfishjy.library.RippleBackground>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <jp.shts.android.library.TriangleLabelView
+                    android:id="@+id/checkmark5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:visibility="invisible"
+                    app:backgroundColor="@color/fbutton_color_nephritis"
+                    app:corner="leftTop"
+                    app:labelBottomPadding="10dp"
+                    app:labelCenterPadding="5dp"
+                    app:primaryText="@string/checked"
+                    app:primaryTextSize="20sp"
+                    app:secondaryText="@string/tick"
+                    app:secondaryTextColor="@color/fbutton_color_sun_flower"
+                    app:secondaryTextSize="20sp" />
+
+                <com.skyfishjy.library.RippleBackground xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/content5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    app:rb_color="@color/colorAccent"
+                    app:rb_duration="1500"
+                    app:rb_radius="32dp"
+                    app:rb_rippleAmount="4"
+                    app:rb_scale="6">
+
+
+                    <ImageView
+                        android:id="@+id/centerImage5"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="26dp"
+                        android:src="@drawable/voice" />
+
+
+                </com.skyfishjy.library.RippleBackground>
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <jp.shts.android.library.TriangleLabelView
+                    android:id="@+id/checkmark6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:visibility="invisible"
+                    app:backgroundColor="@color/fbutton_color_nephritis"
+                    app:corner="leftTop"
+                    app:labelBottomPadding="10dp"
+                    app:labelCenterPadding="5dp"
+                    app:primaryText="@string/checked"
+                    app:primaryTextSize="20sp"
+                    app:secondaryText="@string/tick"
+                    app:secondaryTextColor="@color/fbutton_color_sun_flower"
+                    app:secondaryTextSize="20sp" />
+
+                <com.skyfishjy.library.RippleBackground xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/content6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    app:rb_color="@color/colorAccent"
+                    app:rb_duration="1500"
+                    app:rb_radius="32dp"
+                    app:rb_rippleAmount="4"
+                    app:rb_scale="6">
+
+                    <ImageView
+                        android:id="@+id/centerImage6"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="26dp"
+                        android:src="@drawable/ic_battery_50_black_24dp" />
+                </com.skyfishjy.library.RippleBackground>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+
+</LinearLayout>

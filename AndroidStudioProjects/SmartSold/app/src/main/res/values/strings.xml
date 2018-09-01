@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">SmartSold</string>
+    <string name="free_space">free space</string>
+    <string name="rupees">₹</string>
+    <string name="evaluated_price">Evaluated Market Price</string>
+    <string name="tick">✓</string>
+    <string name="checked">checked</string>
+    <string name="speech_prompt">say hello SmartSold</string>
+    <string name="test">Hello Smart Sold This is mike testing</string>
+    <string name="wifi_not_working">Wifi is not Working</string>
+    <string name="bluetooth_not_working">Bluetooth is not Working</string>
+    <string name="location_not_working">Location is not Working</string>
+    <string name="hotspot_not_working">Hotspot is not Working</string>
+    <string name="Mic_not_working">Mic is not Working</string>
+    <string name="charging_not_working">Charging point is not Working</string>
+    <string name="all_works_good">All Works Good</string>
+    <string name="evaluation_tutorial">Welcome to Evaluation Activity \n This is the tutorial \n
+    All you have to do is click on all the icons to Test those modules \n
+        Pass all the test and get the Fair Market Price
+    </string>
+    <string name="search_title">Search via location</string>
+
+</resources>

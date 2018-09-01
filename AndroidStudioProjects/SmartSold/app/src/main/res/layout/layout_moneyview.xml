@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:liveButton="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:layout_margin="5dp"
+    android:background="@android:color/white"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="10dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#BF333333"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="@string/evaluated_price"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            app:cardBackgroundColor="@color/fbutton_color_turquoise"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+
+            <org.fabiomsr.moneytextview.MoneyTextView
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                app:amount="4500"
+                app:baseTextColor="#333639"
+                app:baseTextSize="26sp"
+                app:decimalDigitsTextSize="30sp"
+                app:decimalGravity="top"
+                app:decimalSeparator="."
+                app:symbol="@string/rupees"
+                app:symbolGravity="start|top"
+                app:symbolMargin="10sp"
+                app:symbolTextSize="30sp" />
+
+        </android.support.v7.widget.CardView>
+
+        <ru.katso.livebutton.LiveButton xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/sell_this_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="10dp"
+            android:onClick="sell"
+            android:padding="8dp"
+            android:shadowColor="@color/fbutton_color_asbestos"
+            android:text="Sell this Item"
+            android:textColor="@android:color/white"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            liveButton:normalHeight="4dp"
+            livebutton:backgroundColor="@color/fbutton_color_sun_flower"
+            livebutton:corners="15dp"
+            livebutton:pressedHeight="2dp" />
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
