@@ -1,0 +1,107 @@
+{
+  "project_info": {
+    "project_number": "219329098735",
+    "firebase_url": "https://livewallpaper-7427b.firebaseio.com",
+    "project_id": "livewallpaper-7427b",
+    "storage_bucket": "livewallpaper-7427b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:219329098735:android:ee0d71bce4e2fd3f",
+        "android_client_info": {
+          "package_name": "com.fahim.livewallpaper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "219329098735-6cn66o78o928iceimt5f9lgqn1cuvcjo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fahim.livewallpaper",
+            "certificate_hash": "da32a7d23128b7b0a748e56eebf59a366ae4a2d9"
+          }
+        },
+        {
+          "client_id": "219329098735-rmmct6flclo3s1isfpr126eio88a4b2o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7JscDwDUqWbDiorelqvoaBRUMWcHfFIo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "219329098735-rmmct6flclo3s1isfpr126eio88a4b2o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:219329098735:android:7ccaceaca97535b5",
+        "android_client_info": {
+          "package_name": "com.android.fahim.livewallpaper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "219329098735-tfb5ka43qtvpc8a0e386c564husskj55.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.android.fahim.livewallpaper",
+            "certificate_hash": "c245a5de27d34a6ca5c9796f0f6c7058085e373f"
+          }
+        },
+        {
+          "client_id": "219329098735-bllth37abaq2sp54jl2ps74a0oldhf10.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.android.fahim.livewallpaper",
+            "certificate_hash": "ea8f55d1fa15e4c72a22be65f352f0b081b95a33"
+          }
+        },
+        {
+          "client_id": "219329098735-rmmct6flclo3s1isfpr126eio88a4b2o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7JscDwDUqWbDiorelqvoaBRUMWcHfFIo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "219329098735-rmmct6flclo3s1isfpr126eio88a4b2o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
