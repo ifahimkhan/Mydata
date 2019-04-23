@@ -1,0 +1,115 @@
+    public void showDate(final int id) {
+
+        Calendar c = Calendar.getInstance();
+        int mYear = c.get(Calendar.YEAR);
+        int mMonth = c.get(Calendar.MONTH);
+        int mDay = c.get(Calendar.DAY_OF_MONTH);
+        final DatePickerDialog.OnDateSetListener datePickerListener = new DatePickerDialog.OnDateSetListener() {
+            // when dialog box is closed, below method will be called.
+            public void onDateSet(DatePicker view, int selectedYear,
+                                  int selectedMonth, int selectedDay) {
+
+            }
+        };
+        final DatePickerDialog datePickerDialog = new DatePickerDialog(getActivity(), new DatePickerDialog.OnDateSetListener() {
+            @Override
+            public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
+                //System.out.println("indate");
+                //String.format("%02d", dayOfMonth);
+                switch (id) {
+                    case R.id.date_time:
+                        if (dayOfMonth < 10) {
+                            Log.e(TAG,from_date + "///////////////");
+                            from_date = "0" + String.valueOf(dayOfMonth) + "-" + (monthOfYear + 1) + "-" + year;
+                        } else {
+                            Log.e(TAG,from_date + " **************");
+                            from_date = dayOfMonth + "-" + (monthOfYear + 1) + "-" + year;
+                        }
+                        break;
+                    case R.id.date_time_to:
+                        if (dayOfMonth < 10) {
+                            to_date = "0" + String.valueOf(dayOfMonth) + "-" + (monthOfYear + 1) + "-" + year;
+                        } else {
+                            to_date = dayOfMonth + "-" + (monthOfYear + 1) + "-" + year;
+                        }
+                        break;
+                }
+            }
+        }, mYear, mMonth, mDay);
+        long cur = System.currentTimeMillis();
+        long mon = 2620000;
+        datePickerDialog.getDatePicker().setMaxDate(cur + 2000);
+        datePickerDialog.getDatePicker().setMinDate(cur - (mon * 1000));
+
+        datePickerDialog.show();
+        final String[] MONTH = {"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"};
+
+        datePickerDialog.setButton(DialogInterface.BUTTON_NEGATIVE,
+                "Cancel",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog,
+                                        int which) {
+                        if (which == DialogInterface.BUTTON_NEGATIVE) {
+                            dialog.cancel();
+
+                        }
+                    }
+                });
+
+        datePickerDialog.setButton(DialogInterface.BUTTON_POSITIVE,
+                "Ok", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog,
+                                        int which) {
+                        if (which == DialogInterface.BUTTON_POSITIVE) {
+
+
+                            DatePicker datePicker = datePickerDialog
+                                    .getDatePicker();
+
+                            datePickerListener.onDateSet(datePicker,
+                                    datePicker.getYear(),
+                                    datePicker.getMonth(),
+                                    datePicker.getDayOfMonth());
+                            //System.out.println("ok" + datePicker.getDayOfMonth() + "-" + (datePicker.getMonth() + 1) +
+                            //    "-" + datePicker.getYear());
+
+                            Date d = new Date(datePicker.getYear(), datePicker.getMonth(),
+                                    datePicker.getDayOfMonth());
+                            SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy", Locale.US);
+                            switch (id) {
+                                case R.id.date_time:
+
+
+                                    standard_from_date = sdf.format(d);
+                                    Log.e(TAG,standard_from_date);
+                                    from_date = datePicker.getDayOfMonth() + "-" + MONTH[datePicker.getMonth()] +
+                                            "-" + datePicker.getYear();
+
+                                    break;
+                                case R.id.date_time_to:
+//                                    standard_to_date = datePicker.getDayOfMonth() + "/" +
+//                                            datePicker.getMonth() + "/" + datePicker.getYear();
+                                    standard_to_date = sdf.format(d);
+                                    Log.e(TAG,standard_to_date);
+                                    to_date = datePicker.getDayOfMonth() + "-" + MONTH[datePicker.getMonth()] +
+                                            "-" + datePicker.getYear();
+                                    break;
+                            }
+
+                            //System.out.println("ok" + pickup_date);
+
+                            switch (id) {
+                                case R.id.date_time:
+                                    date_time.setText(String.format("%s", from_date));
+                                    break;
+                                case R.id.date_time_to:
+                                    date_time_to.setText(String.format("%s", to_date));
+                                    break;
+                            }
+                            dialog.cancel();
+                        }
+                    }
+                });
+
+
+    }
