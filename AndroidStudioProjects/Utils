@@ -113,3 +113,42 @@
 
 
     }
+    
+        private boolean verifyDate() {
+        boolean dateSelection = true;
+        if (from_date.length() > 0 && to_date.length() > 0) {
+            SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy", Locale.US);
+            try {
+
+                Date fromDate = sdf.parse(standard_from_date);
+                Date toDate = sdf.parse(standard_to_date);
+                if (fromDate.after(toDate)) {
+                    dateSelection = false;
+                    Toast.makeText(getContext(), "date selection is not correct", Toast.LENGTH_SHORT).show();
+                    return dateSelection;
+                }
+            } catch (ParseException e) {
+
+                e.printStackTrace();
+            }
+        }
+        if (from_date.length() > 0 && to_date.length() > 0 && dateSelection) {
+            return dateSelection;
+        } else {
+
+            new SweetAlertDialog(getActivity(), SweetAlertDialog.WARNING_TYPE)
+                    .setTitleText("Field can't be empty")
+                    .setContentText("Please select a date.")
+                    .setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
+                        @Override
+                        public void onClick(SweetAlertDialog sDialog) {
+                            sDialog.dismissWithAnimation();
+
+                        }
+                    })
+                    .show();
+            return dateSelection;
+
+        }
+    }
+
